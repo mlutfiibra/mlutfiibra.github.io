@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Tamagochi</title>
+</head>
+
+<body>
+  <img class="main-background" src="./assets/background/main-background.jpg" alt="">
+  <div class="container">
+    <div class="relative">
+      <section class="about-menu hide">
+        <div class="">
+          <p>Dibuat oleh Muhammad Lutfi Ibrahim, Jakarta</p>
+          <p>Git: @mlutfiibra</p>
+          <p>email: mlutfiibra@outlook.com</p>
+
+          <p class="mt-15">All assets belongs to many artist</p>
+        </div>
+        <div>
+          <button class="btn close-about">Tutup</button>
+        </div>
+      </section>
+
+      <section class="main-menu">
+        <div class="title text-centered">
+          TAMAGOCHI
+        </div>
+        <div class="text-centered">
+          <input class="pet-input__name" type="text" name="pet-info__name" placeholder="Masukan nama peliharaan" autocomplete="off">
+        </div>
+        <div class="mt-150 text-centered">
+          <button class="btn init" type="button" name="main">Mulai</button>
+          <button class="btn about" type="button" name="tentang">Tentang</button>
+        </div>
+      </section>
+
+      <section class="background idle hide">
+        <div class="prop-container">
+          <div class="pet-status">
+            <div class="happy-meter">
+              <div class="lds-heart" style="color: #dd4814">
+                <div></div>
+              </div>
+              <div class="heart-bar"></div>
+            </div>
+          </div>
+          <div id="clock" class="clock "></div>
+          <div class="pet-action">
+            <button class="btn status mb-10" type="button" name="bath">Status</button>
+            <button class="btn eat" type="button" name="eat">Makan</button>
+            <button class="btn play" type="button" name="play">Main</button>
+            <button class="btn stop-play hide" type="button" name="play">Berhenti Main</button>
+          </div>
+        </div>
+        <div class="pet-playground">
+          <div class="cat__play hide">
+            <img class="cat__play" src="./assets/cat/git-cat__play.gif" alt="">
+            <button class="btn play-stop" type="button" name="stop-play">Berhenti Bermain</button>
+          </div>
+          <img class="cat__idle" src="./assets/cat/git-cat__main.gif" alt="">
+        </div>
+
+        <div class="pet-info hide">
+          <p>Nama: <span class="pet-info__name"></span></p>
+          <p id="pet-info__age">Umur: 0 hari</p>
+          <p>Nyawa: <span class="pet-info__heart"></span></p>
+        </div>
+      </section>
+
+    </div>
+  </div>
+</body>
+<script src="./main.js" charset="utf-8"></script>
+
+</html>
